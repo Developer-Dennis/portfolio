@@ -12,14 +12,14 @@
       <label for="check" class="checkbtn">
         <i class="fas fa-bars"></i>
       </label>
-      <label class="logo">{DK}</label>
+      <a href="#"><img src="images/logo.png" alt="" width="80px"> </a>
       <ul>
        
         <li><a href="#about">About</a></li>
         <li><a href="#skills">Skills</a></li>
         <li><a href="#resume">Resume</a></li>
         <li><a href="#projects">Projects</a></li>
-        <li><a href="#">Contact</a></li>
+        <li><a href="#contact">Contact</a></li>
       </ul>
     </nav>
     <div class="portfolio">
@@ -68,13 +68,13 @@
         <div id="projects">
           <h1>My Projects</h1>
           <div class="myprojects">
-            <img src="images/1.jpg" alt="">
+            <img src="images/1.jpg" alt=""><br>
             <div class="text-app">
               <div class="text">
                   <h2>Tyds Social Media App</h2>
                   <p>Tyds is a social media web application that allows users to create account,sign in and post tyds which is text. the dependancies i used are Express js,Ejs,Mysql  </p>
                 </div>
-                  <img src="/images/2.jpg" alt="">
+                  <img src="/images/2.jpg" alt=""><br>
                 <div class="text">
                     <h2>Notes App</h2>
                     <p>Notes app is a web application that enable a user create an account sign in create a note edit,delete and its secure since you cannot see other users notes</p>
@@ -87,6 +87,25 @@
             </div>
         </div>
         </div>
+    </div>
+
+    <div class="container" id="contact">
+      <form action="action_page.php">
+    
+        <label for="fname">FullName</label>
+        <input type="text" id="fname" name="firstname" placeholder="Your name.." required>
+    
+        <label for="email">Email</label>
+        <input type="text" id="email" name="email" placeholder="Enter your Email address..">
+    
+      
+    
+        <label for="subject">Subject</label>
+        <textarea id="subject" name="subject" placeholder="Tell me about your next big project......" style="height:200px"></textarea>
+    
+        <input type="submit" value="Submit">
+    
+      </form>
     </div>
     <script src="index.js"></script>
   </body>
